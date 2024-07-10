@@ -18,7 +18,8 @@ header nav {
   max-width: 1264px;
   height: var(--nav-height);
   padding: 0 1rem;
-  font-family: var(--body-font-family);
+  font-family: CBABeaconSans-ExtraBold;
+  /*font-weight: 800;*/
 }
 
 header nav[aria-expanded='true'] {
@@ -148,7 +149,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 40px;
   height: auto;
 }
 
@@ -171,11 +172,31 @@ header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-s);
-  font-weight: 500;
+  font-weight: 800;
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 700;
+  font-weight: 800;
+}
+
+header nav .nav-sections ul > li::after {
+  background-color: #fc0;
+  content: "";
+  height: 3px;
+  opacity: 1;
+  position: relative;
+  top: -10px;
+  width: 100%;
+}
+
+header nav .nav-sections ul > li:hover::after {
+background-color: #fc0;
+  content: "";
+  height: 3px;
+  opacity: 1;
+  position: relative;
+  top: -3px;
+  width: 100%;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -183,7 +204,7 @@ header nav .nav-sections ul > li > ul {
 }
 
 header nav .nav-sections ul > li > ul > li {
-  font-weight: 500;
+  font-weight: 800;
 }
 
 @media (width >= 900px) {
@@ -233,7 +254,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
-    font-weight: 500;
+    font-weight: 800;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -272,4 +293,29 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+/* login button */
+header nav .nav-login a.button {
+  align-items: center;
+    background: #fc0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    height: 64px;
+    justify-content: center;
+    padding: 0 16px;
+    text-decoration: none;
+    font-family: 'CBABEACONSANS-EXTRABOLD';
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 5px 30px;
+    text-align: center;
+    font-style: normal;
+    cursor: pointer;
+    margin: 16px 0;
+    white-space: nowrap;
+    font-size: large;
+    border-radius: 0px;
+    color: black;
 }
