@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/cba/:/",
-    "/content/cba/configuration:/.helix/config.json"
+    "/content/commbank/:/",
+    "/content/commbank/configuration:/.helix/config.json"
   ]
 }
