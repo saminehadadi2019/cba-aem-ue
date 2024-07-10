@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p93711-e854864.adobeaemcloud.com/bin/franklin.delivery/techanubhav/cba-aem-ue/main"
+    url: "https://author-p125006-e1229027.adobeaemcloud.com/bin/franklin.delivery/techanubhav/cba-aem-ue/main"
     type: "markup"
     suffix: ".html"
